@@ -6,10 +6,9 @@ function Grid() {
 	return (
 		<section>
 			<BentoGrid>
-				{gridItems.map((item) => (
+				{gridItems.map((item, index) => (
 					<BentoGridItem
-                        id={item.id}
-						key={item.id}
+						key={index}
 						title={item.title}
 						description={item.description}
                         className={item.className}
